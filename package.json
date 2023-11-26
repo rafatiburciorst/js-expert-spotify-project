@@ -1,0 +1,29 @@
+{
+  "name": "spotify-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "LOG_DISABLED=true NODE_OPTIONS=--experimental-vm-modules jest --no-cache",
+    "test:watch": "LOG_DISABLED=true NODE_OPTIONS=--experimental-vm-modules jest --no-cache --watchAll",
+    "test:coverage": "LOG_DISABLED=true NODE_OPTIONS=--experimental-vm-modules jest --no-cache --coverage tests/unit"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.10",
+    "@types/node": "^20.10.0",
+    "jest": "27"
+  },
+  "dependencies": {
+    "pino": "^8.16.2",
+    "pino-pretty": "^10.2.3"
+  }
+}
